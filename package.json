@@ -1,0 +1,27 @@
+{
+  "name": "postgres-fts",
+  "version": "1.0.0",
+  "description": "this is a test for Full Text Search(FTS) provide by postgresQL",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test",
+    "migration": "npx prisma migrate dev --name init",
+    "seed": "node ./src/seed/seeder.js",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [
+    "full"
+  ],
+  "author": "yvesdavinci",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "axios": "^1.7.7",
+    "express": "^4.21.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0"
+  }
+}

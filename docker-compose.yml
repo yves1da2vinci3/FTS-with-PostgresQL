@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:14
+    container_name: postgres_fts_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: fts_db
+    ports:
+      - "5432:5432"  # Replace 5432 with the actual port if different
+    volumes:
+      - pgdata_fts:/var/lib/postgresql/data
+    networks:
+      - postgres-network
+
+volumes:
+  pgdata_fts:
+
+networks:
+  postgres-network:
+    driver: bridge
