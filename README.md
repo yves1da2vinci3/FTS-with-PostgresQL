@@ -1,5 +1,3 @@
-Here's the corrected version of your README:
-
 # Postgres Full-Text Search (FTS) with Prisma
 
 This project demonstrates how to implement Full-Text Search (FTS) in PostgreSQL using Prisma ORM. It leverages PostgreSQL's `to_tsvector()`, `to_tsquery()`, and `ts_rank_cd()` functions for efficient text-based search capabilities. The application uses Node.js and Express for the server-side logic, Prisma as the database ORM, and Docker for easy environment setup.
